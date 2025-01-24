@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "singularName": "company",
+    "pluralName": "companies",
+    "displayName": "company",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "companyID": {
+      "type": "biginteger"
+    },
+    "companyname": {
+      "type": "string"
+    },
+    "Activity": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "SA",
+        "SARL"
+      ]
+    },
+    "Telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "text"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "companytype": {
+      "type": "enumeration",
+      "enum": [
+        "ItSecurity",
+        "ITdeveloppement",
+        "ITtelecom",
+        "Distributor",
+        "Constructor"
+      ]
+    },
+    "Ville": {
+      "type": "enumeration",
+      "enum": [
+        "Rabat",
+        "Casablanca",
+        "Tanger",
+        "Temara",
+        "Agadir",
+        "Marrakech"
+      ]
+    }
+  }
+}
