@@ -7,7 +7,7 @@
     "build": "strapi build",
     "deploy": "strapi deploy",
     "develop": "strapi develop",
-    "start": "NODE_ENV=development strapi develop"
+    "start": "NODE_ENV=development strapi develop",
     "strapi": "strapi"
   },
   "dependencies": {
