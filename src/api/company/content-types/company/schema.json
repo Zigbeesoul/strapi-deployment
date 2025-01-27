@@ -40,17 +40,6 @@
     "adresse": {
       "type": "text"
     },
-    "logo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "companytype": {
       "type": "enumeration",
       "enum": [
@@ -71,6 +60,9 @@
         "Agadir",
         "Marrakech"
       ]
+    },
+    "logo": {
+      "type": "string"
     }
   }
 }

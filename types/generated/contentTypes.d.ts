@@ -404,7 +404,7 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
       'api::company.company'
     > &
       Schema.Attribute.Private;
-    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     Telephone: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<['SA', 'SARL']>;
