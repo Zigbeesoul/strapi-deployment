@@ -398,6 +398,7 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     email: Schema.Attribute.Email;
+    latitude: Schema.Attribute.Decimal;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -405,6 +406,7 @@ export interface ApiCompanyCompany extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.String;
+    longitude: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     Telephone: Schema.Attribute.String;
     type: Schema.Attribute.Enumeration<['SA', 'SARL']>;
